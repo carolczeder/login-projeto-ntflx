@@ -169,10 +169,26 @@ body::before {
     text-decoration: underline;
 }
 
-@media(max-width: 430px) {
+@media (max-width: 430px) {
   .header {
-    padding: 20px  15px;
-  
-    .logo {
-      width: 80px;
-    }
+    padding: 20px 15px;
+  }
+  .header .logo {
+    width: 80px;
+  }
+  .container {
+    padding: 5px 20px 2px 20px;
+  }
+  .container form {
+    max-width: 100%;
+  }
+  .container form .inputContainer label {
+    font-size: 14px;
+  }
+  footer {
+    text-align: left;
+  }
+  footer .containerFooter ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }

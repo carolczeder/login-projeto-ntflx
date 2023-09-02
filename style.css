@@ -175,10 +175,10 @@ body::before {
     }
     
     .login_body {
-        padding: 20px;
-        max-width: 90%;
-        margin: 10vh auto; /* Centralizar verticalmente em dispositivos móveis */
-    }
+    padding: 20px;
+    max-width: 90%;
+    margin: 10vh auto 0; /* Centralizar horizontal e verticalmente em dispositivos móveis */
+}
     
     .login_body input {
         height: 40px;

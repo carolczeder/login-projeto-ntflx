@@ -177,7 +177,8 @@ body::before {
     .login_body {
         padding: 20px;
         max-width: 90%;
-        margin: 10vh auto 0; /* Centralizar horizontal e verticalmente em dispositivos móveis */
+        margin: 10vh auto 0; /* Centralizar verticalmente em dispositivos móveis e horizontalmente */
+        transform: translateX(0); /* Remover a transformação anterior */
     }
     
     .login_body input {
@@ -186,6 +187,10 @@ body::before {
     }
     
     .login_box button {
+        height: 40px;
+        margin-bottom: 5px;
+    }
+}
         height: 40px;
         margin-bottom: 5px;
     }

@@ -180,12 +180,11 @@ body::before {
 
     .logo {
         text-align: center;
-        margin-bottom: 20px; /* Reduzida a margem inferior */
     }
 
     .logo img {
         height: auto;
-        width: 200px; /* Aumentada a largura da imagem para se assemelhar à versão desktop */
+        width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
         max-width: 100%;
     }
     

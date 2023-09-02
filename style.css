@@ -173,9 +173,9 @@ body::before {
     body {
         background-size: auto;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
-        height: 100vh; 
+        height: 100vh;
     }
     
     .login_body {

@@ -38,7 +38,8 @@ body::before {
     z-index: 90;
     position: relative;
     max-width: 450px;
-    margin: 0 auto; /* Centralizar horizontalmente em todos os dispositivos */
+    height: 500px;
+    margin-left: 50%;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     box-sizing: border-box;
@@ -168,9 +169,26 @@ body::before {
 }
 
 /* Media query para telas menores que 768px (dispositivos móveis) */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    body {
+        background-size: auto; /* Remover background-size: cover; */
+    }
+    
     .login_body {
-        padding: 20px; /* Ajuste de espaço interno para dispositivos móveis */
+        padding: 20px;
+        max-width: 90%;
+        margin: 10vh auto; /* Centralizar verticalmente em dispositivos móveis */
+    }
+    
+    .login_body input {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .login_box button {
+        height: 40px;
+        margin-bottom: 5px;
     }
 }
+
 

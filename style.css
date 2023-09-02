@@ -169,26 +169,21 @@ body::before {
     text-decoration: underline;
 }
 
-@media (max-width: 430px) {
-  .header {
-    padding: 20px 15px;
+/* Estilo base para telas menores */
+body {
+  font-size: 16px;
+}
+
+/* Media query para telas maiores (por exemplo, tablets) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
   }
-  .header .logo {
-    width: 80px;
+}
+
+/* Media query para telas grandes (por exemplo, desktops) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
   }
-  .container {
-    padding: 5px 20px 2px 20px;
-  }
-  .container form {
-    max-width: 100%;
-  }
-  .container form .inputContainer label {
-    font-size: 14px;
-  }
-  footer {
-    text-align: left;
-  }
-  footer .containerFooter ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+}

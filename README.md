@@ -1,7 +1,8 @@
 # Netflix Login
 
 
-![image](https://github.com/carolczeder/projeto-netflix-login/assets/103961258/a0eede97-de90-4a73-8722-c27ed4be2136)
+![image](https://github.com/carolczeder/projeto-netflix-login/assets/103961258/2cf1513d-ac3c-4578-9ccd-2dd422317e09)
+
 
 
 ✨ Meu Primeiro Projeto: Clone da Página de Login da Netflix 🎬

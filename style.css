@@ -24,9 +24,10 @@ body::before {
 
 .logo img {
     height: auto;
-    width: 100%;
+    width: auto;
     max-width: 180px;
-    margin: 0 auto; /* Centralizar a logo horizontalmente */
+    margin-rigth: 20px;
+    float: left
 }
 
 .header {
@@ -39,9 +40,9 @@ body::before {
     padding: 20px;
     z-index: 90;
     position: relative;
-    width: 100%; /* Largura máxima em telas maiores */
-    max-width: 450px; /* Largura máxima para evitar que o conteúdo fique muito largo em telas maiores */
-    margin: 0 auto; /* Centralizar o elemento horizontalmente */
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     box-sizing: border-box;

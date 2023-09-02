@@ -168,22 +168,3 @@ body::before {
 .terms a:hover {
     text-decoration: underline;
 }
-
-/* Estilo base para telas menores */
-body {
-  font-size: 16px;
-}
-
-/* Media query para telas maiores (por exemplo, tablets) */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* Media query para telas grandes (por exemplo, desktops) */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
-}

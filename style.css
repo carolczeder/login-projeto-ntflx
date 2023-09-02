@@ -172,18 +172,12 @@ body::before {
 @media (max-width: 767px) {
     body {
         background-size: auto; /* Remover background-size: cover; */
-        display: flex; /* Usar flexbox para centralizar verticalmente */
-        justify-content: center; /* Centralizar verticalmente */
-        align-items: center; /* Centralizar horizontalmente */
-        height: 100vh; /* Definir a altura para ocupar toda a altura da tela */
     }
     
     .login_body {
         padding: 20px;
         max-width: 90%;
-        width: 100%; /* Definir largura para 100% */
-        height: auto; /* Definir altura para automático */
-        margin: 0 auto; /* Centralizar horizontalmente */
+        margin: 30vh auto 0; /* Mover um pouco para cima e centralizar verticalmente e horizontalmente */
         transform: translateX(0); /* Remover a transformação anterior */
     }
     
@@ -197,3 +191,4 @@ body::before {
         margin-bottom: 5px;
     }
 }
+

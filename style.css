@@ -5,14 +5,14 @@ body {
     width: 100%;
     position: relative;
     background-image: url(background.jpg);
-    background-image: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body::before {
     content: '';
-    background-color: rgb(0, 0, 0, .5); 
+    background-color: rgba(0, 0, 0, 0.5); /* Alterada a definição de opacidade */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -23,58 +23,58 @@ body::before {
 }
 
 .logo img {
-    height: 45px;
-    width: 180px;
+    height: auto; /* Para ajustar automaticamente a altura */
+    width: 100%; /* Para ajustar automaticamente a largura */
+    max-width: 180px; /* Largura máxima para evitar esticamento */
 }
 
 .header {
-    padding: 20px 50px;
-    position: relative;
+    padding: 20px;
+    text-align: center; /* Centralizar o texto */
     z-index: 10;
 }
 
 .login_body {
-    padding: 60px;
+    padding: 20px; /* Reduzido o espaço interno */
     z-index: 90;
     position: relative;
-    max-width: 450px;
-    height: 500px;
-    margin-left: 50%;
-    background-color: rgb(0, 0, 0, 0.75);
+    max-width: 100%; /* Usar toda a largura da tela */
+    margin: 0 auto; /* Centralizar o elemento horizontalmente */
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     box-sizing: border-box;
-    transform: translateX(-50%);
 }
- 
+
 .login_body h2 {
-    font-size: 32px;
+    font-size: 24px; /* Reduzida a fonte */
     color: #fff;
     margin-top: 0;
+    text-align: center; /* Centralizar o texto */
 }
 
 .login_body input {
-    height: 50px;
+    height: 40px; /* Reduzida a altura */
     width: 100%;
     color: #fff;
     background-color: #333;
     border: none;
     border-radius: 5px;
-    padding-left: 15px;
+    padding: 10px; /* Aumentada a área de toque */
     box-sizing: border-box;
     outline: none;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .login_body input:hover {
     background-color: #444;
-
 }
 
 .input_box {
-    margin-bottom: 25px;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .login_box button {
-    height: 50px;
+    height: 40px; /* Reduzida a altura */
     width: 100%;
     color: #fff;
     background-color: #e50914;
@@ -91,21 +91,20 @@ body::before {
 }
 
 .support {
-    display: flex;
     color: #b3b3b3;
-    justify-content: space-between;
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .support input {
-    width: 15px;
-    height: 15px;
+    width: auto;
+    height: auto;
 }
 
 .remember {
     display: flex;
     align-items: center;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .remember span {
@@ -126,7 +125,6 @@ body::before {
 .login_facebook {
     display: flex;
     align-items: center;
-    width: 100%;
     color: #737373;
 }
 
@@ -168,3 +166,12 @@ body::before {
 .terms a:hover {
     text-decoration: underline;
 }
+
+/* Media query para telas de dispositivo móvel */
+@media (max-width: 768px) {
+    .login_body {
+        padding: 10px;
+        max-width: 90%;
+    }
+}
+

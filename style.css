@@ -168,27 +168,21 @@ body::before {
     text-decoration: underline;
 }
 
-/* Media query para telas menores que 768px (dispositivos móveis) */
+/* Media query para dispositivos móveis */
 @media (max-width: 767px) {
     body {
-        background-size: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        background-size: auto; /* Remover background-size: cover; */
     }
 
-    .logo {
-        text-align: center;
-        margin-bottom: 10px; /* Reduzida a margem inferior */
-    }
-    
     .login_body {
         padding: 20px;
         max-width: 90%;
-        width: 100%; 
-        margin: 0 auto; 
-        transform: translateX(0); 
+        margin: 10vh auto 0; /* Centralizar verticalmente em dispositivos móveis */
+        transform: translateX(0); /* Remover a transformação anterior */
+    }
+
+    .login_body h2 {
+        font-size: 24px; /* Reduzir o tamanho da fonte em dispositivos móveis */
     }
 
     .login_body input {

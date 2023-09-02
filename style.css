@@ -26,6 +26,7 @@ body::before {
     height: auto;
     width: 100%;
     max-width: 180px;
+    margin: 0 auto; /* Centralizar a logo horizontalmente */
 }
 
 .header {
@@ -38,8 +39,9 @@ body::before {
     padding: 20px;
     z-index: 90;
     position: relative;
-    max-width: 450px;
-    margin: 0 auto;
+    width: 100%; /* Largura máxima em telas maiores */
+    max-width: 450px; /* Largura máxima para evitar que o conteúdo fique muito largo em telas maiores */
+    margin: 0 auto; /* Centralizar o elemento horizontalmente */
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     box-sizing: border-box;
@@ -173,11 +175,3 @@ body::before {
         padding: 10px;
     }
 }
-
-/* Estilos para desktop (telas maiores que 768px) */
-@media (min-width: 769px) {
-    .login_body {
-        max-width: 450px;
-    }
-}
-

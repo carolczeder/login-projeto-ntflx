@@ -177,7 +177,7 @@ body::before {
     .login_body {
         padding: 20px;
         max-width: 90%;
-        margin: 10vh auto 0; /* Mover um pouco para cima e centralizar verticalmente e horizontalmente */
+        margin: 50vh auto 0; /* Mover um pouco para cima e centralizar verticalmente e horizontalmente */
         transform: translateX(0); /* Remover a transformação anterior */
     }
     

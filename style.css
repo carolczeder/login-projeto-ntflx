@@ -174,10 +174,16 @@ body::before {
         background-size: auto; /* Remover background-size: cover; */
     }
 
+    .logo {
+        text-align: center; /* Centralizar o texto (logo) horizontalmente */
+        margin-bottom: 20px; /* Espaço inferior entre a logo e o formulário */
+    }
+
     .login_body {
         padding: 20px;
         max-width: 90%;
-        margin: 10vh auto 0; /* Centralizar verticalmente em dispositivos móveis */
+        width: 100%; /* Definir largura para 100% */
+        margin: 0 auto; /* Centralizar horizontalmente */
         transform: translateX(0); /* Remover a transformação anterior */
     }
 

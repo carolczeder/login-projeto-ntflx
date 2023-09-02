@@ -1,3 +1,4 @@
+/* Estilos para todos os tamanhos de tela */
 body {
     padding: 0;
     margin: 0;
@@ -177,7 +178,7 @@ body::before {
         align-items: center; /* Centralizar verticalmente */
         height: 100vh; /* Definir a altura para ocupar toda a altura da tela */
     }
-    
+
     .login_body {
         padding: 20px;
         max-width: 90%;
@@ -185,12 +186,12 @@ body::before {
         margin: 0 auto; /* Centralizar horizontalmente */
         transform: translateX(0); /* Remover a transformação anterior */
     }
-    
+
     .login_body input {
         height: 40px;
         margin-bottom: 10px;
     }
-    
+
     .login_box button {
         height: 40px;
         margin-bottom: 5px;

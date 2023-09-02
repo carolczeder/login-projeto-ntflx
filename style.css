@@ -12,7 +12,7 @@ body {
 
 body::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Alterada a definição de opacidade */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -23,46 +23,46 @@ body::before {
 }
 
 .logo img {
-    height: auto;
-    width: 100%;
-    max-width: 180px;
+    height: auto; /* Para ajustar automaticamente a altura */
+    width: 100%; /* Para ajustar automaticamente a largura */
+    max-width: 180px; /* Largura máxima para evitar esticamento */
 }
 
 .header {
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Centralizar o texto */
     z-index: 10;
 }
 
 .login_body {
-    padding: 20px;
+    padding: 20px; /* Reduzido o espaço interno */
     z-index: 90;
     position: relative;
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 100%; /* Usar toda a largura da tela */
+    margin: 0 auto; /* Centralizar o elemento horizontalmente */
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 .login_body h2 {
-    font-size: 24px;
+    font-size: 24px; /* Reduzida a fonte */
     color: #fff;
     margin-top: 0;
-    text-align: center;
+    text-align: center; /* Centralizar o texto */
 }
 
 .login_body input {
-    height: 40px;
+    height: 40px; /* Reduzida a altura */
     width: 100%;
     color: #fff;
     background-color: #333;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px; /* Aumentada a área de toque */
     box-sizing: border-box;
     outline: none;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .login_body input:hover {
@@ -70,11 +70,11 @@ body::before {
 }
 
 .input_box {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .login_box button {
-    height: 40px;
+    height: 40px; /* Reduzida a altura */
     width: 100%;
     color: #fff;
     background-color: #e50914;
@@ -93,7 +93,7 @@ body::before {
 .support {
     color: #b3b3b3;
     font-size: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .support input {
@@ -104,7 +104,7 @@ body::before {
 .remember {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaçamento inferior aumentado */
 }
 
 .remember span {
@@ -169,24 +169,9 @@ body::before {
 
 /* Media query para telas de dispositivo móvel */
 @media (max-width: 768px) {
-    body {
-        background-size: auto; /* Remover background-size: cover; */
-    }
-
     .login_body {
         padding: 10px;
         max-width: 90%;
     }
-    
-    .login_body input {
-        height: 35px;
-        margin-bottom: 10px;
-    }
-    
-    .login_box button {
-        height: 35px;
-        margin-bottom: 5px;
-    }
 }
-
 

@@ -186,6 +186,17 @@ body::before {
         transform: translateX(0); /* Remover a transformação anterior */
     }
     
+    .logo {
+        text-align: center; /* Centralizar o texto */
+    }
+    
+    .logo img {
+        height: 45px;
+        width: 180px;
+        display: block; /* Evitar espaços indesejados */
+        margin: 0 auto; /* Centralizar horizontalmente */
+    }
+    
     .login_body input {
         height: 40px;
         margin-bottom: 10px;

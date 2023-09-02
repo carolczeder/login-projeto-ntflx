@@ -179,6 +179,11 @@ body::before {
         height: 100vh; /* Definir a altura para ocupar toda a altura da tela */
     }
 
+    .logo {
+        text-align: center; /* Centralizar o texto (logo) horizontalmente */
+        margin-bottom: 20px; /* Espaço inferior entre a logo e o formulário */
+    }
+    
     .login_body {
         padding: 20px;
         max-width: 90%;

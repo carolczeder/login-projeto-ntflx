@@ -173,9 +173,9 @@ body::before {
     body {
         background-size: auto;
         display: flex;
-        justify-content: center;
+        justify-content: center; 
         align-items: center;
-        height: 100vh;
+        height: 100vh; 
     }
     
     .login_body {
@@ -184,17 +184,6 @@ body::before {
         width: 100%;
         margin: 0 auto;
         transform: translateX(0);
-    }
-    
-    .logo {
-        text-align: center;
-    }
-    
-    .logo img {
-        height: 45px;
-        width: 180px;
-        display: block;
-        margin: 0 auto; 
     }
     
     .login_body input {
